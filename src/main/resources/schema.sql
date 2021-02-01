@@ -1,0 +1,29 @@
+DROP TABLE IF EXISTS COMPANYINFO;
+
+CREATE TABLE COMPANYINFO
+(
+    symbol   VARCHAR(250) PRIMARY KEY,
+    name     VARCHAR(250),
+    exchange VARCHAR(250)
+);
+CREATE TABLE QUOTE
+(
+    SYMBOL           VARCHAR(250) PRIMARY KEY,
+    STATUS           VARCHAR(250),
+    NAME             VARCHAR(250),
+    LASTPRICE        FLOAT,
+    CHANGE           FLOAT,
+    CHANGEPERCENT    FLOAT,
+    TIMESTAMP        TIMESTAMP WITH TIME ZONE,
+    MSDATE           FLOAT,
+    MARKETCAP        BIGINT,
+    VOLUME           BIGINT,
+    CHANGEYTD        FLOAT,
+    CHANGEPERCENTYTD FLOAT,
+    HIGH             FLOAT,
+    LOW              FLOAT,
+    OPEN             FLOAT,
+    CURRENCY         VARCHAR(5)
+
+)
+

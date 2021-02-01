@@ -1,0 +1,22 @@
+spring:
+  application:
+     name: quotes-service
+  jmx:
+    enabled: false
+  h2:
+    console:
+      enabled: true
+  datasource:
+    generate-unique-name: false
+  jpa:
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      ddl-auto: none
+  jackson:
+    serialization:
+      FAIL_ON_EMPTY_BEANS: false
